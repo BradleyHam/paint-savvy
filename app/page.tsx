@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Hero from "./HomeComponents/Hero";
 import FeaturedPostsSection from "./HomeComponents/FeaturedPostsSection";
+import ContactForm from "./SiteComponents/ContactForm";
+import ContactSection from "./HomeComponents/ContactSection";
+import Footer from "./SiteComponents/Footer";
+
 const featuredPostsSections = {
     commonProblems: {
       title: 'Solutions to common problems',
@@ -88,6 +92,8 @@ export default function Home() {
       <div className="bg-white">
          <FeaturedPostsSection section={proTips}/>
       </div>
+      <ContactSection />
+      <Footer />
     </main>
   );
 }
